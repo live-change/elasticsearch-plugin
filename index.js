@@ -24,5 +24,5 @@ module.exports = function(app, services) {
 
   if(env.SEARCH_INDEX_PREFIX) app.defaultProcessors.push(searchIndex)
   if(env.SEARCH_INDEX_PREFIX) app.defaultUpdaters.push(updater)
-  if(env.SEARCH_INDEX_PREFIX) app.defaultUpdaters.push(indexProcess)
+  if(env.SEARCH_INDEX_PREFIX) app.defaultProcesses.push(indexProcess)
 }
